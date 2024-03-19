@@ -16,33 +16,33 @@
                 <img id="logo-img" src="img/Logo@2x.png" alt="logo-alura">
             </div>
             <div class="text-input-area">
-                <textarea name="" id="" cols="30" rows="10">Ingrese el texto aqui</textarea>
+                <textarea name="" id="user-input" cols="30" rows="10">Ingrese el texto aqui</textarea>
                 <div>
                     <div class="info-area">
                         <img src="img/exclamation-circle-mark.svg" alt="" srcset="">
                         <span class="info-text">Solo letras minusculas y sin acentos</span>
                     </div>
                     <div class="button-area">
-                        <button class="btn-color">
+                        <button class="btn-color" onclick="encrypt()">
                             Encriptar
                         </button>
-                        <button class="btn-border">
+                        <button class="btn-border" onclick="decipherWord()">
                             Desencriptar
                         </button>
                     </div>
                 </div>
             </div>
             <div class="text-output-area">
-                <!-- <img src="img/Muñeco.svg" alt="">
-                <div>
+                <div id="no-message">
+                    <img src="img/Muñeco.svg" alt="">
                     <p class="text-bold">Ningún mensaje fue encontrado</p>
                     <p class="info-text">Ingresa el texto que desees encriptar o desencriptar</p>
-                </div> -->
-                <div class="output-area">
-                    <p id="output">chalala</p>
-                    <button class="btn-border">Copiar</button>
                 </div>
-                
+                <div class="output-area">
+                    <p id="output"></p>
+                    <button id="btn-copy" class="btn-border" onclick="copyText()" hidden>Copiar</button>
+                </div>
+
             </div>
         </div>
     </main>

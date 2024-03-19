@@ -120,19 +120,7 @@ p + .btn-border{
 
 
 @media only screen and (max-width: 600px) {
-    /* .container {
-        border: 2px solid red;
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 0.5fr 2fr 1fr; 
-        grid-template-areas: 
-          "logo logo logo"
-          "text-input text-input text-input"
-          "text-output text-output text-output"; 
-      } */
-
-
-      .container{
+       .container{
         display: flex;
         flex-direction: column;
         gap:20px;
